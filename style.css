@@ -5,8 +5,12 @@
   font-family: system-ui, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: radial-gradient(circle at top, #0b0f2a, #020617);
+  background: radial-gradient(circle at top, #0b1027, #020617);
   color: #fff;
 }
 
@@ -18,12 +22,14 @@ body {
   padding: 15px 8%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   backdrop-filter: blur(12px);
-  background: rgba(0,0,0,0.4);
-  z-index: 100;
+  background: rgba(0,0,0,0.45);
+  z-index: 1000;
 }
 
 .navbar ul {
+  list-style: none;
   display: flex;
   gap: 20px;
 }
@@ -31,6 +37,7 @@ body {
 .navbar a {
   color: #aaa;
   text-decoration: none;
+  font-size: 14px;
 }
 
 .navbar a.active,
@@ -41,24 +48,34 @@ body {
 /* HERO */
 .hero {
   min-height: 100vh;
-  padding-top: 120px;
+  padding-top: 140px;
   text-align: center;
 }
 
-.hero-title {
-  font-size: 3.2rem;
+.hero h1 {
+  font-size: 3rem;
 }
 
-.hero-title span {
+.hero h1 span {
   color: #7c7cff;
 }
 
+.hero p {
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+}
+
+/* BUTTONS */
 .btn {
   padding: 12px 26px;
   border-radius: 30px;
-  margin: 10px;
-  display: inline-block;
   text-decoration: none;
+  margin: 8px;
+  display: inline-block;
 }
 
 .primary {
@@ -71,23 +88,24 @@ body {
   color: #7c7cff;
 }
 
-/* GLASS */
+/* GLASS SECTIONS */
 .glass {
   max-width: 1100px;
   margin: 100px auto;
   padding: 40px;
-  background: rgba(255,255,255,0.07);
+  background: rgba(255,255,255,0.06);
   border-radius: 20px;
   backdrop-filter: blur(15px);
 }
 
+/* GRID */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 25px;
 }
 
-/* PROJECTS */
+/* PROJECT CARD */
 .project-card {
   padding: 25px;
   background: rgba(0,0,0,0.5);
@@ -102,13 +120,14 @@ body {
 .links a {
   color: #7c7cff;
   margin-right: 10px;
+  font-size: 14px;
 }
 
-/* ACTIVITIES */
+/* ACTIVITY CARD */
 .activity-card {
   position: relative;
-  border-radius: 15px;
   overflow: hidden;
+  border-radius: 15px;
 }
 
 .activity-card img {
@@ -120,9 +139,10 @@ body {
 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.75);
   opacity: 0;
   transition: 0.4s;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
