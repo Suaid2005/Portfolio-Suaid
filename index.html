@@ -1,170 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Muhammad Suaid | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Muhammad Suaid | Advanced Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
 
-<!-- Background Glow -->
+<!-- NAVBAR -->
+<nav class="navbar">
+  <h3 class="logo">Suaid.</h3>
+  <ul>
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#activities">Activities</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- BACKGROUND BLOBS -->
 <div class="blob blue"></div>
 <div class="blob pink"></div>
 
 <!-- HERO -->
-<header class="hero" id="home">
-  <h1 class="glow">Muhammad Suaid</h1>
-  <p class="subtitle">
+<section class="hero" id="home">
+  <h1 class="hero-title">Building the future<br>with <span>code & creativity</span></h1>
+  <p class="hero-subtitle">
     Software Engineer Enthusiast • DevOps • Graphic Designer
   </p>
-  <div class="hero-buttons">
-    <a href="#projects" class="btn">View Projects</a>
-    <a href="#contact" class="btn outline">Contact Me</a>
+  <div class="hero-btns">
+    <a href="#projects" class="btn primary">View Projects</a>
+    <a href="#contact" class="btn outline">Contact</a>
   </div>
-</header>
+</section>
 
 <!-- ABOUT -->
 <section class="glass fade" id="about">
   <h2>About Me</h2>
   <p>
     I am Muhammad Suaid, a Computer Engineering undergraduate at Presidency
-    University, Bangalore. I am passionate about software engineering,
-    DevOps practices, and creating visually engaging digital experiences.
-  </p>
-  <p>
-    I actively take part in leadership and nonprofit initiatives and currently
-    serve as Media Secretary at the Sunni Students Federation.
+    University, Bangalore, passionate about DevOps, software engineering,
+    and modern UI design.
   </p>
 </section>
 
-<!-- EDUCATION -->
-<section class="glass fade" id="education">
-  <h2>Education</h2>
+<!-- PROJECTS -->
+<section class="glass fade" id="projects">
+  <h2>Projects</h2>
 
-  <div class="card">
-    <h3>B.Tech – Computer Engineering</h3>
-    <p><strong>Presidency University, Bangalore</strong></p>
-    <span>2024 – 2028</span>
+  <div class="grid">
+
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>Advanced neon-themed portfolio deployed on GitHub Pages.</p>
+      <div class="links">
+        <a href="#">GitHub</a>
+        <a href="#">Live</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>DevOps Learning Repo</h3>
+      <p>Hands-on DevOps practice with CI/CD and automation basics.</p>
+      <div class="links">
+        <a href="#">GitHub</a>
+      </div>
+    </div>
+
   </div>
-
-  <div class="card">
-    <h3>PUC – PCMC</h3>
-    <p><strong>Yenepoya PU College, Mangalore</strong></p>
-    <span>2022 – 2024</span>
-  </div>
-
-  <div class="card">
-    <h3>SSLC</h3>
-    <p><strong>Manshar English Medium School</strong></p>
-    <span>2021 – 2022</span>
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section class="glass fade" id="experience">
-  <h2>Experience</h2>
-
-  <div class="card">
-    <h3>Media Secretary</h3>
-    <p>Sunni Students Federation</p>
-    <span>Dec 2025 – Present</span>
-  </div>
-
-  <div class="card">
-    <h3>Campus Secretary</h3>
-    <p>Sunni Students Federation</p>
-    <span>Dec 2022 – Jul 2024</span>
-  </div>
-</section>
-
-<!-- SKILLS -->
-<section class="glass fade" id="skills">
-  <h2>Skills</h2>
-  <div class="skills-grid">
-    <span>Java</span>
-    <span>DevOps (Learning)</span>
-    <span>Artificial Intelligence (Basics)</span>
-    <span>Agile Project Management</span>
-    <span>SDLC</span>
-    <span>Graphic Design</span>
-    <span>Figma</span>
-    <span>Canva</span>
-    <span>Leadership</span>
-    <span>Communication</span>
-  </div>
-</section>
-
-<!-- CERTIFICATIONS -->
-<section class="glass fade" id="certifications">
-  <h2>Certifications</h2>
-  <ul class="list">
-    <li>Basics of Artificial Intelligence – Cambridge (2026)</li>
-    <li>Agile Project Management – HP LIFE (2025)</li>
-    <li>Tata Crucible Campus Quiz (2025)</li>
-    <li>IEEE TECH WEEK Ideathon (2025)</li>
-  </ul>
 </section>
 
 <!-- ACTIVITIES -->
 <section class="glass fade" id="activities">
   <h2>Activities</h2>
 
-  <div class="activities">
+  <div class="grid">
 
     <div class="activity-card">
-      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
-      <h3>Career Guidance Webinar</h3>
-      <p>
-        Participated in a structured career guidance webinar focusing on
-        internships, hiring trends, and career planning.
-      </p>
+      <img src="assets/images/activity1.jpg">
+      <div class="overlay">
+        <h3>Career Guidance Webinar</h3>
+        <p>Focused on internships and career planning.</p>
+      </div>
     </div>
 
     <div class="activity-card">
-      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
-      <h3>IEEE Tech Week Ideathon</h3>
-      <p>
-        Engaged in ideathon challenges emphasizing innovation,
-        teamwork, and problem-solving.
-      </p>
+      <img src="assets/images/activity2.jpg">
+      <div class="overlay">
+        <h3>IEEE Ideathon</h3>
+        <p>Innovation & problem-solving event.</p>
+      </div>
     </div>
 
     <div class="activity-card">
-      <img src="https://images.unsplash.com/photo-1552664730-d307ca884978">
-      <h3>Leadership & Community Work</h3>
-      <p>
-        Led and supported student and nonprofit initiatives
-        through organizational roles.
-      </p>
+      <img src="assets/images/activity3.jpg">
+      <div class="overlay">
+        <h3>Leadership Initiatives</h3>
+        <p>Community and nonprofit organizational roles.</p>
+      </div>
     </div>
 
   </div>
 </section>
 
-<!-- PROJECTS -->
-<section class="glass fade" id="projects">
-  <h2>Projects</h2>
-  <p class="center-text">
-    Projects will be added soon. Stay tuned 🚀
-  </p>
-</section>
-
 <!-- CONTACT -->
 <section class="glass fade" id="contact">
   <h2>Contact</h2>
-  <p>📍 Bangalore, Karnataka, India</p>
   <p>📧 suaidputhrabail75@gmail.com</p>
   <p>📱 +91 8217668044</p>
   <p>
-    <a href="https://linkedin.com/in/muhammadsuaid" target="_blank">LinkedIn</a> |
-    <a href="https://github.com/suaid2005" target="_blank">GitHub</a>
+    <a href="https://github.com/suaid2005">GitHub</a> |
+    <a href="https://linkedin.com/in/muhammadsuaid">LinkedIn</a>
   </p>
 </section>
 
-<footer class="fade">
-  © 2026 Muhammad Suaid • Designed & Built with ❤️
+<footer>
+  © 2026 Muhammad Suaid • Advanced Portfolio
 </footer>
 
 <script src="script.js"></script>
